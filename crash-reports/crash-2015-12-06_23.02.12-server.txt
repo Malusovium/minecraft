@@ -1,0 +1,214 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 12/6/15 11:02 PM
+Description: Watching Server
+
+java.lang.Error
+	at adm.a(SourceFile:204)
+	at adm.p(SourceFile:655)
+	at adm.a(SourceFile:965)
+	at pk.d(SourceFile:522)
+	at pr.g(SourceFile:1217)
+	at pr.m(SourceFile:1460)
+	at ps.m(SourceFile:339)
+	at ph.m(SourceFile:126)
+	at tm.m(SourceFile:38)
+	at tn.m(SourceFile:56)
+	at pr.t_(SourceFile:1300)
+	at ps.t_(SourceFile:211)
+	at adm.a(SourceFile:1408)
+	at le.a(SourceFile:597)
+	at adm.g(SourceFile:1386)
+	at adm.i(SourceFile:1279)
+	at le.i(SourceFile:478)
+	at net.minecraft.server.MinecraftServer.B(SourceFile:607)
+	at ko.B(SourceFile:299)
+	at net.minecraft.server.MinecraftServer.A(SourceFile:535)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:451)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at adm.a(SourceFile:204)
+	at adm.p(SourceFile:655)
+	at adm.a(SourceFile:965)
+	at pk.d(SourceFile:522)
+	at pr.g(SourceFile:1217)
+	at pr.m(SourceFile:1460)
+	at ps.m(SourceFile:339)
+	at ph.m(SourceFile:126)
+	at tm.m(SourceFile:38)
+	at tn.m(SourceFile:56)
+	at pr.t_(SourceFile:1300)
+	at ps.t_(SourceFile:211)
+	at adm.a(SourceFile:1408)
+	at le.a(SourceFile:597)
+	at adm.g(SourceFile:1386)
+	at adm.i(SourceFile:1279)
+	at le.i(SourceFile:478)
+	at net.minecraft.server.MinecraftServer.B(SourceFile:607)
+	at ko.B(SourceFile:299)
+	at net.minecraft.server.MinecraftServer.A(SourceFile:535)
+
+-- Thread Dump --
+Details:
+	Threads: "Netty Epoll Server IO #7" Id=25 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #6" Id=24 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #5" Id=23 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #4" Id=22 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #3" Id=21 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #2" Id=20 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #1" Id=19 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"File IO Thread" Id=29 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at auc.c(SourceFile:44)
+	at auc.run(SourceFile:30)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server Watchdog" Id=27 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:446)
+	at kp.run(SourceFile:43)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #0" Id=18 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server console handler" Id=15 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:272)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	-  locked java.io.BufferedInputStream@1523b17d
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	-  locked java.io.InputStreamReader@2e164045
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	...
+
+
+"DestroyJavaVM" Id=14 RUNNABLE
+
+
+"Server thread" Id=12 RUNNABLE
+	at adm.a(SourceFile:204)
+	at adm.p(SourceFile:655)
+	at adm.a(SourceFile:965)
+	at pk.d(SourceFile:522)
+	at pr.g(SourceFile:1217)
+	at pr.m(SourceFile:1460)
+	at ps.m(SourceFile:339)
+	at ph.m(SourceFile:126)
+	...
+
+
+"Server Infinisleeper" Id=11 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at ko$1.run(SourceFile:65)
+
+
+"Snooper Timer" Id=10 TIMED_WAITING on java.util.TaskQueue@36d589a6
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@36d589a6
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7d400d69
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7d400d69
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@7830a8bc
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@7830a8bc
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+
+
+
+Stacktrace:
+	at kp.run(SourceFile:59)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.8
+	Operating System: Linux (amd64) version 3.13.0-68-generic
+	Java Version: 1.7.0_85, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 5587507632 bytes (5328 MB) / 8488222720 bytes (8095 MB) up to 8488222720 bytes (8095 MB)
+	JVM Flags: 2 total; -Xmx8192M -Xms8192M
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	Profiler Position: N/A (disabled)
+	Player Count: 3 / 10; [lf['michieltjuh11'/3713587, l='world', x=212.50, y=5.71, z=172.98], lf['Anakion'/3810530, l='world', x=-7986.36, y=80.00, z=-1432.30], lf['Ghazzar'/3811349, l='world', x=193.50, y=58.95, z=13.23]]
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)

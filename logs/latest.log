@@ -1,0 +1,13 @@
+[00:25:32] [Server thread/INFO]: Unknown command. Try /help for a list of commands
+[00:25:36] [Server thread/INFO]: [Server] hello
+[00:25:42] [Server thread/INFO]: There are 0/10 players online:
+[00:25:42] [Server thread/INFO]: 
+[00:25:47] [Server thread/INFO]: Stopping the server
+[00:25:47] [Server thread/INFO]: Stopping server
+[00:25:47] [Server thread/INFO]: Saving players
+[00:25:47] [Server thread/INFO]: Saving worlds
+[00:25:47] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[00:25:47] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[00:25:47] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[00:25:47] [Server Shutdown Thread/INFO]: Stopping server
+[00:25:47] [Server Shutdown Thread/INFO]: Saving players
